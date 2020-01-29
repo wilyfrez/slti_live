@@ -1,0 +1,406 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    transition: background-color .5s;
+    background-color: #e5e2eb;
+   overflow-x: hidden;
+}
+
+.main-content{   
+    margin-left: 160px;
+    margin-top: 70px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff !important;
+    border-top: 2px solid  #007bff;
+}
+
+.nav-tabs .nav-link{
+    padding: 4px 10px;
+}
+
+a {
+    color: #495057 !important;
+}
+
+
+/*--Top Navigation ---*/
+.navbar{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    width: 100%;
+    padding: 0px 2rem ;
+}
+.navbar-brand{
+    font-weight: 500;
+}
+sup.badge{
+    font-size: 0.5rem;
+}
+
+.profile-img{
+    border: 0px solid black;
+    border-radius: 50%;
+}
+
+.staff-name a{
+    padding: 0px;
+}
+/*--Top Navigation ---*/
+
+
+
+/*--Side Navigation ---*/
+.sideNav{
+   position: fixed;
+    left: 0;
+    top: 20px;
+    z-index: 1;
+    width: 130px;  
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 50px;
+}
+
+.profile{
+    margin: 10px 0;
+}
+
+.side-profile-name{
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+.side-profile-rank{
+    font-size: 0.7rem;
+}
+a.features.active{
+  color: #fff !important;
+}
+p.features-text{
+    margin-top: 10px;
+    margin-bottom: 5px;
+   
+}
+
+
+
+
+/*--Side Navigation ---*/
+
+
+/*--Teaching Curriculum--*/
+
+#teaching-curriculum{
+    border-radius: .25em;
+    padding: 5px 15px 5px 5px;
+}
+
+.teaching-curriculum-header{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.teaching-level-item{
+    padding: 1.2rem 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+   background-color: #f7f8fa;
+   border: none;
+}
+
+button.list-group-item.list-group-item-action{
+    padding: 12px 10px;
+}
+
+/*--Teaching Curriculum--*/
+
+
+/*-- Curriculum Content--*/
+
+#curriculum-content{
+   
+}
+
+
+
+video {
+    width: 100%    !important;
+    height: auto   !important;
+    
+  }
+
+  #video-wrapper{
+    background-color: #fff;
+   
+}
+  
+
+/*-- Curriculum Content--*/
+
+
+/*--Comment---*/
+.comment-area{
+    border-radius: 15px;
+}
+
+.comment-box {
+    border: 1px solid #f7f8fa;
+    background-color: #f7f8fa;
+    border-radius: 15px;
+}
+
+
+.commentor-name {
+    font-weight: 600;
+    color: #024a97;
+}
+
+.sm-comment-name {
+    margin-left: 80px;
+}
+
+.timeAgo,
+.country {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.comment-btn {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: #fff;
+    color: #007bff !important;
+}
+
+
+.comment-btn:hover{
+    background-color: #fff;
+}
+.comment-bt:active{
+    border: 0px solid #fff;
+}
+
+/*--Comment---*/
+
+.mySidebar{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #fff;   
+    transition: 0.5s;
+    
+}
+
+
+  
+  .mySidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .mySidebar a:hover {
+    color: #111;
+  }
+  
+  .mySidebar .closebtn {
+    
+   
+  }
+
+  .sideHeader{
+      width: 100%;
+      height: 150px;
+      background-color: cornsilk;
+  }
+
+  .mySidebar ul li p.features-text{
+      font-size: 1rem;
+      margin-left: 10px;
+  }
+/*--Media Queries ---*/
+
+@media (max-width: 1100px) {
+
+    .navbar{          
+        padding: 5px 10px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .main-content{
+            margin-left: 110px;
+            margin-right: 40px;
+        }
+
+        .navbar{          
+            padding: 7px 15px;
+        }
+
+        a.navbar-brand{
+            font-size: 1.4rem;
+        }
+    /*--Side Navigation---*/
+    .sideNav{
+        width: 85px;
+        padding-top: 70px;
+    }
+
+    p.features-text{
+       font-size: 0.75rem;
+    }
+
+    .side-profile{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .side-profile-rank, .side-profile-name{
+        display: none;
+    }
+/*--Side Navigation---*/
+
+
+/*--Comment---*/
+.comment-box {
+    font-size: .85rem;
+}
+   
+/*--Comment---*/
+
+}
+
+@media (max-width: 576px) {
+
+    .main-content{
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 100%;
+            overflow-x: hidden;     
+   }
+
+   #video-wrapper{
+    position: fixed;
+    top: 25px;
+   z-index: 3;
+}
+   ul.nav-tabs{
+       margin-top: 4px;
+   }
+
+   .tab-content{
+    margin-top: 25rem;
+
+   }
+
+   .tab-content ul li,
+			p,
+			a {
+				font-size: 0.8rem;
+			}
+
+    /*--Side Navigation---*/
+    .sideNav{
+        display: none;
+       width: 0px;
+    }
+
+    .side-profile{
+        width: 30px;
+        height: 30px;
+    }
+    
+    p.features-text{
+        font-size: 0.65rem;
+     }
+ 
+   
+/*--Side Navigation---*/
+
+.navbar-brand img{
+    width: 40px;
+    height: 25px;
+}
+
+.title{
+    content: "SLTI";
+}
+
+.navbar{
+    padding: 3px 10px !important;
+}
+   
+.navbar-toggler {
+    padding: 0.1rem !important;
+}
+
+
+
+/*--Comment---*/
+.comment-area {
+    font-size: 0.8rem;
+}
+
+.comment-box {
+    font-size: .75rem;
+}
+
+.pic img {
+    height: 25px;
+    width: 25px;
+}
+/*--Comment---*/
+
+}
+
+@media(max-width: 520px) {
+    .tab-content{
+        margin-top: 23rem;
+    
+       }
+}
+
+@media(max-width: 480px) {
+    .tab-content{
+        margin-top: 21.5rem;
+    
+       }
+}
+
+@media(max-width: 430px) {
+    .tab-content{
+        margin-top: 20rem;
+    
+       }
+}
+
+@media (max-width: 375px) {
+    .tab-content {
+        margin-top: 18.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .tab-content {
+        margin-top: 16.3rem;
+    }
+
+    .pic img {
+        height: 20px;
+        width: 20px;
+    }
+}
+
